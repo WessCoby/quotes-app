@@ -1,0 +1,16 @@
+@font-face {
+  src: url("../fonts/UbuntuCondensed.ttf");
+  font-family: UbuntuCondensed;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  object-fit: cover;
+  font-family: UbuntuCondensed, sans-serif;
+}
