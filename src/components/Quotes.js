@@ -10,7 +10,7 @@ class Quotes extends Component {
     outputQuote = () => this.setState({favoriteQuote: fetchQuote()});
 
     componentDidMount = () => {
-        this.QuoteInterval = setInterval(() => this.outputQuote(), 15000);
+        this.QuoteInterval = setInterval(() => this.outputQuote(), 20000);
     };
 
     componentWillUnmount = () => clearInterval(this.QuoteInterval());
