@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 import logo_image from '../images/logo-wess.png';
+import {timerBreakdown} from '../Functions';
 
 class Profile extends Component {
 
     state = {
-        dateTime: new Date().toLocaleString()
+        dateTime: timerBreakdown(new Date())
+    };
+
+    tick_tock = () => {
+        this.setState({dateTime: timerBreakdown(new Date())});
+    };
+
+    componentDidMount = () => {
+        setInterval(() => this.tick_tock(), 1000);
     };
 
     render() {
@@ -14,8 +23,8 @@ class Profile extends Component {
                         <div className="col d-flex flex-row justify-content-between">
                             <img src={logo_image} alt="WessCoby's Logo" className="logo-img mr-2"/>
                             <div>
-                                <p className="time-display text-fira-code mb-0">16:02:55</p>
-                                <p className="date-display text-fira-sans">Friday, 16th November, 2018</p>
+                                <p className="time-display text-fira-code mb-0">{this.state.dateTime.getTimeNow()}</p>
+                                <p className="date-display text-fira-sans">{this.state.dateTime.getFullDate()}</p>
                             </div>
                         </div>
                     </div>

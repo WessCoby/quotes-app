@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 
 class Quotes extends Component {
+
+    state = {
+
+    };
+
+    componentDidMount = () => {
+
+    };
+
     render() {
         return (
                 <main role="main" className="Quotes">

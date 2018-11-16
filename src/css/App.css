@@ -8615,7 +8615,7 @@ h3 {
   height: 60px;
 }
 .Profile .date-display {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   margin-top: -10px;
 }
 .Profile .time-display {
@@ -8630,6 +8630,10 @@ h3 {
 }
 .Quotes .quote-text, .Quotes .quote-author {
   text-shadow: #ccc;
+}
+
+.Footer p {
+  font-size: 0.76rem;
 }
 
 /*# sourceMappingURL=App.css.map */

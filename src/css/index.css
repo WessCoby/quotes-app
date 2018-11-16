@@ -21,6 +21,10 @@
   font-family: "FiraSans", sans-serif;
 }
 
+.text-ubuntu {
+  font-family: UbuntuCondensed, sans-serif;
+}
+
 
 body {
   height: 95vh;
