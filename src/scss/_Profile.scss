@@ -1,4 +1,15 @@
 .Profile {
-  //min-height: 10vh;
-  //max-height: 15vh;
+  .logo-img {
+    width: 150px;
+    height: 60px;
+  }
+
+  .date-display {
+    font-size: 0.7rem;
+    margin-top: -10px;
+  }
+
+  .time-display {
+    font-size: 1.85rem;
+  }
 }

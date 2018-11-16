@@ -1,8 +1,14 @@
 .Quotes {
-  //min-height: 60vh;
-  //max-height: 75vh;
+  .quote-text {
+    font-size: 1.83rem;
+  }
+
+  .quote-author {
+    font-size: 1.27rem;
+  }
+
+  .quote-text, .quote-author {
+    text-shadow: #ccc;
+  }
 }
 
-.quote-text {
-  font-size: 1.8rem;
-}

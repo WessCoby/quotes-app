@@ -4,7 +4,7 @@ class Footer extends Component {
     render() {
         return (
             <footer className="Footer text-center">
-                <p>Footer</p>
+                <p>Didn't see your favorite? <a href="mailto:cobygiven@gmail.com">Send it!</a></p>
             </footer>
         );
     }

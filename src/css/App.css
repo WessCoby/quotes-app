@@ -8610,12 +8610,26 @@ h3 {
     border-color: #dee2e6;
   }
 }
-.main-row {
-  height: 100%;
+.Profile .logo-img {
+  width: 150px;
+  height: 60px;
+}
+.Profile .date-display {
+  font-size: 0.7rem;
+  margin-top: -10px;
+}
+.Profile .time-display {
+  font-size: 1.85rem;
 }
 
-.quote-text {
-  font-size: 1.8rem;
+.Quotes .quote-text {
+  font-size: 1.83rem;
+}
+.Quotes .quote-author {
+  font-size: 1.27rem;
+}
+.Quotes .quote-text, .Quotes .quote-author {
+  text-shadow: #ccc;
 }
 
 /*# sourceMappingURL=App.css.map */
