@@ -8,13 +8,11 @@ class Profile extends Component {
         dateTime: timerBreakdown(new Date())
     };
 
-    tick_tock = () => {
-        this.setState({dateTime: timerBreakdown(new Date())});
-    };
+    tick_tock = () => this.setState({dateTime: timerBreakdown(new Date())});
 
-    componentDidMount = () => {
-        setInterval(() => this.tick_tock(), 1000);
-    };
+    componentDidMount = () => this.tickInterval = setInterval(() => this.tick_tock(), 1000);
+
+    componentWillUnmount = () => clearInterval(this.tickInterval);
 
     render() {
         return (
